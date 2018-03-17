@@ -16,6 +16,14 @@ object MainTensor {
     // You can also create tensors in the following way:
     val t3 = Tensor(2.0, 5.6)                                 // Creates a vector that contains the numbers 2.0 and 5.6
     val t4 = Tensor(Tensor(1.2f, -8.4f), Tensor(-2.3f, 0.4f)) // Creates a matrix with 2 rows and 2 columns
+    println(t0.rank)     // Returns the value 2
+    println(t1.rank)
+    println(t2.rank)
+    println(t3.rank)
+    println(t4.rank)
+
+    val tensor = Tensor.zeros(INT32, Shape(2, 5))
+    println(tensor.summarize(flattened = true))
     println("end test")
   }
 
