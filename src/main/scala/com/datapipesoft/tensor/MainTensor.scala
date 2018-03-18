@@ -23,7 +23,8 @@ object MainTensor {
     println(t4.rank)
 
     val tensor = Tensor.zeros(INT32, Shape(2, 5))
-    println(tensor.summarize(flattened = true))
+    println(t4.summarize(flattened = true))
+    println(tensor.dataType)
     println("end test")
   }
 
